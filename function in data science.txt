@@ -1,0 +1,32 @@
+details=pd.read_csv("export.csv",index_col=0)
+#print(copy_data.index)
+#print(copy_data.columns)
+#print(copy_data.memory_usage())
+for index in details.columns:
+    print(pd.crosstab(index=details[index],columns='count',dropna=True))
+print(pd.crosstab(index=details['JAVA_MARKS'],columns=details['JAVA_ATTEMPTNO'],margins= True, normalize='columns', dropna=True))
+print(pd.crosstab(index=details['JAVA_MARKS'],columns=details['JAVA_ATTEMPTNO'],margins= True, normalize='index', dropna=True))
+
+
+
+plt.scatter(details['JAVA_MARKS'],details['JAVA_ATTEMPTNO'],c='red')
+plt.title('Testing')
+plt.xlabel('JAVA Marks')
+plt.ylabel('No of attempts')
+plt.show()
+
+
+plt.hist(details['JAVA_MARKS'])
+plt.title('Testing of Histogram')
+plt.xlabel('JAVA Marks')
+plt.ylabel('No of attempts') 
+
+
+count=[997,120,1200]
+fuel=('petrol','diesel','CNG')
+index=np.arange(len(fuel))
+plt.bar(index,count,color=['red','green','black'])
+plt.title('Testing of bar')
+plt.xlabel('JAVA Marks')
+plt.ylabel('No of attempts')
+plt.show()

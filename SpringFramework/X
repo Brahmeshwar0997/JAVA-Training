@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- This is our bean -->
+	<bean class="com.infy.bean.Student" name="student1">
+		<property name="StudentId">
+			<value>1234</value>
+		</property>
+		<property name="StudentName">
+			<value>Brahmeshwar</value>
+		</property>
+		<property name="StudentAddress">
+			<value>Kanpur</value>
+		</property>
+
+	</bean>
+	<!-- Second bean object -->
+	<bean class="com.infy.bean.Student" name="student2">
+		<property name="StudentId" value="1122" />
+
+
+		<property name="StudentName" value="ABCDE" />
+
+		<property name="StudentAddress" value="Pune" />
+
+
+	</bean>
+	
+	
+	<bean class="com.infy.bean.Student2" name="student12">
+		<property name="StudentId" value="112222222" />
+
+
+		<property name="StudentName" value="ABCDddddddddddE" />
+
+		<property name="StudentAddress" value="Prrrrrrrune" />
+<property name="sttt12" ref="student1" />
+
+
+	</bean>
+	
+	
+	<!-- Second bean object -->
+	<bean class="com.infy.bean.Student" name="student3"
+		p:StudentId="123123" p:StudentName="RRRAAA"
+		p:StudentAddress="KKKKAKKAK" />
+</beans>

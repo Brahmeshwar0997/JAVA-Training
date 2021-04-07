@@ -1,0 +1,11 @@
+ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");// Spring IOC Container
+
+		Student std1 = (Student) context.getBean("student1");
+		System.out.println(std1);
+		Student std2 = (Student) context.getBean("student2");
+		System.out.println(std2);
+		Student std3 = (Student) context.getBean("student3");
+		System.out.println(std3);
+		Student2 std1122 = (Student2) context.getBean("student12");
+		
+		System.out.println("Student 2"+ std1122);

@@ -1,0 +1,62 @@
+package com.infy.bean;
+
+public class Student2 {
+
+	private int StudentId;
+	private String StudentName;
+	private String StudentAddress;
+private Student sttt12;
+public Student getSttt12() {
+	return sttt12;
+}
+
+public void setSttt12(Student sttt12) {
+	this.sttt12 = sttt12;
+}
+
+public int getStudentId() {
+		return StudentId;
+	}
+
+	public void setStudentId(int studentId) {
+		StudentId = studentId;
+	}
+
+	public String getStudentName() {
+		return StudentName;
+	}
+
+	public void setStudentName(String studentName) {
+		StudentName = studentName;
+	}
+
+	public String getStudentAddress() {
+		return StudentAddress;
+	}
+
+	public void setStudentAddress(String studentAddress) {
+		StudentAddress = studentAddress;
+	}
+
+	public Student2(int studentId, String studentName, String studentAddress) {
+		super();
+		StudentId = studentId;
+		StudentName = studentName;
+		StudentAddress = studentAddress;
+	}
+
+	public Student2() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Student2 [StudentId=" + StudentId + ", StudentName=" + StudentName + ", StudentAddress="
+				+ StudentAddress + ", sttt12=" + sttt12 + "]";
+	}
+
+	 
+	 
+
+}
